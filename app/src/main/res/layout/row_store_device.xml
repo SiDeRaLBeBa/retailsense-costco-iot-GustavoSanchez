@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/deviceLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Device Label"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/deviceOverflow"/>
+
+    <TextView
+        android:id="@+id/deviceType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Device Type • Store"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/deviceLabel"
+        app:layout_constraintEnd_toStartOf="@id/deviceOverflow"/>
+
+    <TextView
+        android:id="@+id/deviceStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/deviceType"/>
+
+    <TextView
+        android:id="@+id/deviceLastHeartbeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HH:MM"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/deviceType"/>
+
+    <TextView
+        android:id="@+id/deviceOverflow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⋮"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
