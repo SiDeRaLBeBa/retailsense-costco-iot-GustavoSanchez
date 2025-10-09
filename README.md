@@ -19,7 +19,7 @@ The app follows Material Design 3 guidelines and is built entirely with **Java**
 ### 1. Prerequisites
 - Android Studio Hedgehog or newer
 - Gradle 8+
-- Minimum SDK: 26
+- Minimum SDK: 27
 - Target SDK: 34
 
 ### 2. Dependencies
